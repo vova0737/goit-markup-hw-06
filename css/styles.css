@@ -827,10 +827,17 @@ body {
 
 .checkbox {
   display: block;
-  margin-top: 20px;
+  margin-top: 20px; 
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 24px; */
+  line-height: 0.85;
+  letter-spacing: 0,03em;
 }
 
 .checkbox-icon {
@@ -845,7 +852,7 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked + .checkbox-icon {
+.checkbox:checked + .checkbox-icon {
   background-color: var(--active-link-color);
   border-color: var(--active-link-color);
   border-radius: 2px;
@@ -855,9 +862,9 @@ body {
 }
 
 .checkbox-link {
+  display: inline-block;
   color: var(--active-link-color);
   border-bottom: 1px solid currentColor;
-  display: inline-block;
   line-height: 0.85;
 }
 
@@ -892,5 +899,6 @@ body {
   border-radius: 4px;
   border-width: 0;
   cursor: pointer;
-  }
+}
+
 
