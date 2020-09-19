@@ -54,7 +54,7 @@
           <h1 class="banner-heading">Эффективные решения для вашего бизнеса</h1>
           <!-- <button class="banner-button link" data-modal-open>Заказать услугу</button> -->
           <!-- <a href="" class="banner-button link" data-modal-open>Заказать услугу</a> -->
-          <a class="banner-button link" data-modal-open>Заказать услугу</a>
+          <a class="banner-button link" href="#" data-modal-open>Заказать услугу</a>
       </section>
       
       <section class="feature-section">
@@ -390,9 +390,43 @@
       <div class="modal">
         <button class="close-button" data-modal-close>
           <svg class="close-icon" width="18">
-            <use href="./img/sprite.svg#close"></use>
+            <use href="./img/sprite.svg#modal-close"></use>
           </svg>
         </button>
+        <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+          <form>
+            <label class="form-label">
+              Имя
+              <input type="text" name="user-name" class="form-input">
+              <svg class="form-icon">
+                <use href="./img/sprite.svg#modal-person"></use>
+              </svg>
+            </label>
+            <label class="form-label">
+              Телефон
+              <input type="tel" name="user-tel" class="form-input">
+              <svg class="form-icon">
+                <use href="./img/sprite.svg#modal-phone"></use>
+              </svg>
+            </label>
+            <label class="form-label">
+              Почта
+              <input type="email" name="user-email" class="form-input">
+              <svg class="form-icon">
+                <use href="./img/sprite.svg#modal-email"></use>
+              </svg>
+            </label>
+            <label class="form-comment">
+              Комментарий
+              <textarea name="comment" class="form-input comment-input" placeholder="Введите текст"></textarea>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="agreement" class="checkbox-input">
+              <span class="checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a>
+            </label>
+            <button type="submit" class="form-button">Отправить</button>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
