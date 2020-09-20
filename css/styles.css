@@ -16,7 +16,6 @@
 
 .flex {
   display: flex;
-  align-items: baseline;
 }
 
 body {
@@ -417,7 +416,8 @@ body {
   height: 44px;
   border-radius: 50%;
   fill: #AFB1B8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-item:not(:last-child) {
@@ -432,11 +432,13 @@ body {
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--active-link-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* clients section */
@@ -483,9 +485,13 @@ body {
 
 .footer {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 60px; 
   background: #2f303a;
   color: #ffffff;
+}
+
+.footer .flex {
+  align-items: baseline;  
 }
 
 .footer-address {
@@ -545,7 +551,6 @@ body {
 
 .subscribe {
   margin-left: 93px;
-  /* margin-top: 12px; */
 }
 
 .subscribe-title {
@@ -848,15 +853,12 @@ body {
 .checkbox {
   display: block;
   margin-top: 20px; 
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 0.85;
-  letter-spacing: 0,03em;
+  letter-spacing: 0.03em;
 }
 
 .checkbox-icon {
